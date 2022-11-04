@@ -2,7 +2,7 @@
     <body>
         <h2>Hello World!</h2>
 
-        <a href="./server">server</a><hr>
+        <a href="./servidor">server</a><hr>
         
         <form id="form">
             <label for="nome">Nome: </label>
@@ -20,7 +20,7 @@
 
             $.ajax({
                 method: "GET",
-                url: "./server",
+                url: "./servidor",
                 success: (data) => {
                     $('body').append(data + "<br>")
                 },
@@ -31,7 +31,7 @@
             
             $('#form').submit( function(event) {
                 $.ajax({
-                    url: "./server", 
+                    url: "./servidor", 
                     method: 'POST',
                     data: $('#form').serialize(),
                     success: (data) => {
